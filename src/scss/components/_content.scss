@@ -1,0 +1,38 @@
+@use "layout";
+@use "blocks";
+@use "colors";
+@use "mixins";
+
+@mixin layout {
+	@include mixins.alignments;
+	@include blocks.core;
+	& > * {
+		// Include top level block styles
+		@include blocks.top;
+		&:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide):not([data-align="wide"]):not([data-align="full"]) {
+			// Items without a styled width set max width
+			@include mixins.width( var(--content-width-max) );
+		}
+	}
+}
+
+// Front end
+#content article .entry-content {
+	@include layout;
+}
+
+// Back end
+body {
+	& > .edit-post-visual-editor__post-title-wrapper,
+	& > .block-editor-block-list__layout.is-root-container {
+		@include layout;
+	}
+	// Title
+	& > .edit-post-visual-editor__post-title-wrapper {
+		.editor-post-title .editor-post-title__input {
+			border: 0 none !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+}
