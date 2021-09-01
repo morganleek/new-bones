@@ -104,7 +104,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/wor/wp-content/themes/good-bones/src/js/admin.js */"./src/js/admin.js");
+module.exports = __webpack_require__(/*! /var/www/wor/wp-content/themes/new-bones/src/js/admin.js */"./src/js/admin.js");
 
 
 /***/ })

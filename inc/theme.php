@@ -24,7 +24,7 @@
     add_theme_support( 'editor-styles' );
 
 		// enqueue editor styles
-		add_editor_style( 'dist/css/admin.css' );
+		add_editor_style( 'dist/css/style-editor.css' );
     // add inline style for :root font-size for rem values
     wp_add_inline_style( 'wp-block-library', ':root { font-size:10px; }' );
 	}

@@ -5,7 +5,7 @@
 		$theme_version = wp_get_theme()->get( 'Version' );
 		
 		// front-end styles
-		wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), $theme_version, 'all' );
+		wp_enqueue_style( '_themename-stylesheet', get_stylesheet_directory_uri() . '/dist/css/style.css', array(), $theme_version, 'all' );
 		// front-end scripts
 		wp_enqueue_script( '_themename-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array('jquery'), $theme_version, true );
 		// front-end js variables

@@ -30,7 +30,7 @@ export const reload = done => {
 export const clean = () => del(['dist']);
   
 export const styles = () => {
-return src(['src/scss/bundle.scss', 'src/scss/admin.scss'])
+return src(['src/scss/style.scss', 'src/scss/style-editor.scss'])
   .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
   .pipe(sass().on('error', sass.logError))
   .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ])))
