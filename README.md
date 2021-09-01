@@ -1,5 +1,5 @@
-# Good Bones
-Good Bones is an empty framework to build Wordpress themes with Gutenberg
+# New Bones
+New Bones is an empty framework to build Wordpress themes with Gutenberg
 
 ```bash
 # Install dependencies
